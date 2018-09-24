@@ -1,0 +1,26 @@
+{
+  "name": "indexer",
+  "version": "2.3.0",
+  "description": "indexer for the semantic search engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "indexer",
+    "annotation",
+    "turtle",
+    "semantic",
+    "controlled"
+  ],
+  "author": "Ibrahim AdDandan",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "wink-porter2-stemmer": "^1.0.8",
+    "xml-js": "^1.6.3"
+  }
+}

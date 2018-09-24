@@ -1,0 +1,29 @@
+{
+  "name": "searchengine",
+  "version": "1.2.5",
+  "description": "Semantic search engine using fuseki Jena and youtubedl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IbrahimAdDandan/SemanticSearchEngine.git"
+  },
+  "keywords": [
+    "Jena",
+    "Fuseki",
+    "openwebspider",
+    "napajs",
+    "angularjs"
+  ],
+  "author": "Ibrahim AdDandan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IbrahimAdDandan/SemanticSearchEngine/issues"
+  },
+  "homepage": "https://github.com/IbrahimAdDandan/SemanticSearchEngine#readme",
+  "dependencies": {
+    "openwebspider": "file:openwebspider"
+  }
+}

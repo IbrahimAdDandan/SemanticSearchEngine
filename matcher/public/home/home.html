@@ -1,0 +1,52 @@
+<div>
+    <div ng-if="vm.timeElapsed" class="" style="margin-top: 60px;"> Time Elapsed: {{ vm.timeElapsed }} seconds.</div>
+    <div class="row" style="text-align: center; margin-top: 150px;">
+        <div class="col-lg-8 offset-2">
+            <h1 class="">
+                <span style="color: #f33">S</span>imple
+                <span style="color: #33f">S</span>emantic
+                <span style="color: rgb(30, 221, 30)">S</span>earch
+                <span style="color: rgb(150, 21, 182)">E</span>ngine</h1>
+        </div>
+        <div class="col-lg-8 offset-2" style="margin-top: 50px;">
+            <div class="form-group">
+                <div class="input-group mb-3">
+                    <input class="form-control is-valid" type="text" ng-model="vm.query">
+                    <div class="input-group-append">
+                        <span class="btn btn-outline-info" ng-click="vm.searching()">Search</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 offset-3" style="margin-top: 5px; text-align: left;">
+            <input type="checkbox" name="expand" ng-model="vm.expand">
+            <label for="expand">Expanded Search?</label>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <div class="col-lg-8" style="margin-top: 50px; text-align: left;">
+            <div ng-if="vm.noResults" class="alert-info">No results found :(</div>
+            <ul ng-if="vm.data" class="list-group">
+                <li class="list-group-item" ng-if="vm.data.binding.literal._text">
+                    <a ng-href="{{vm.data.binding.literal._text}}" class="" target="_blank">
+                        {{ vm.data.binding.literal._text }}
+                    </a><!--
+                    <iframe ng-src="{{vm.data.binding.literal._text}}" frameborder="0" width="200" height="250" style="margin: 10px;">
+                        <p>Your browser doesn't support iframe</p>
+                    </iframe>-->
+                </li>
+                <div ng-if="!vm.data.binding.literal._text" ng-repeat="result in vm.data">
+                    <li class="list-group-item">
+                        <a ng-href="{{result.binding.literal._text}}" class="" target="_blank">
+                            {{ result.binding.literal._text }}
+                        </a><!--
+                        <iframe ng-src="{{result.binding.literal._text}}" frameborder="0" width="200" height="250" style="margin: 10px;">
+                            <p>Your browser doesn't support iframe</p>
+                        </iframe>-->
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "initdata",
+  "version": "1.4.0",
+  "description": "initialization data from database to be indexing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "indexing",
+    "search",
+    "engine",
+    "semantic"
+  ],
+  "author": "Ibrahim AdDandan",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "mysql": "^2.15.0",
+    "vtt-json": "^1.0.1",
+    "youtube-dl": "^1.12.2"
+  }
+}

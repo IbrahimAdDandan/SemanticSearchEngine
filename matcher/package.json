@@ -1,0 +1,27 @@
+{
+  "name": "matcher",
+  "version": "1.0.0",
+  "description": "semantic matching user interface",
+  "main": "matcher.js",
+  "scripts": {
+    "start": "node matcher",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "semantic",
+    "search",
+    "engine"
+  ],
+  "author": "Ibrahim AdDandan",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.7.0",
+    "angular-route": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "napajs": "^0.2.3",
+    "request": "^2.87.0",
+    "wink-porter2-stemmer": "^1.0.8",
+    "xml-js": "^1.6.3"
+  }
+}

@@ -1,0 +1,30 @@
+<% include ../views/partials/header %>
+	<% include ../views/partials/navbar %>
+		<main role="main" class="container" style="margin-top: 150px;">
+			<div class="row">
+				<div class="col-lg-6 offset-3">
+					<form action="/initdata" method="post" class="form-group">
+						<input type="submit" value="Initialization Data" class="btn btn-outline-success btn-lg btn-block">
+					</form>
+					<form action="/indexing" method="post" class="form-group">
+						<input type="submit" value="Start indexing" class="<%= disabled %> btn btn-outline-success btn-lg btn-block">
+					</form>
+
+				</div>
+			</div>
+		</main>
+		<% if (inited) { %>
+			<div class="col-md-4" style="margin-left: -10px;">
+				<div class="popover-left alert-success" style="padding: 10px 10px; margin-top: 5px;">
+					<p class="">The data Initialization process successfully started in the background, now you can start indexing</p>
+				</div>
+			</div>
+			<% } %>
+		<% if (started) { %>
+			<div class="col-md-4"  style="margin-left: -10px;">
+				<div class="popover-left alert-success" style="padding: 10px 10px; margin-top: 5px;">
+					<p class="">The indexing process successfully started in the background</p>
+				</div>
+			</div>
+			<% } %>
+				<% include ../views/partials/footer %>
